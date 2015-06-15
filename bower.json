@@ -1,0 +1,22 @@
+{
+  "name": "net.xelaris.PawExtensions.WsseDynamicValue",
+  "version": "1.0.0",
+  "authors": [
+    "Alexander Schwenn <alexander.schwenn@gmail.com>"
+  ],
+  "main": "WsseDynamicValue.js",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "cryptojslib": "~3.1.2"
+  }
+}
