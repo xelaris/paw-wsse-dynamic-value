@@ -1,0 +1,16 @@
+{
+  "name": "Paw-WSSEDynamicValue",
+  "version": "1.0.0",
+  "devDependencies": {
+    "coffee-script": "latest",
+    "mkdirp": "~0.5.0",
+    "ncp": "~1.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:xelaris/paw-wsse-dynamic-value.git"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/cake test"
+  }
+}
