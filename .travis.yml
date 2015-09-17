@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+- '0.10'
+before_install:
+- npm install coffee-script
+before_script:
+- ./node_modules/.bin/cake archive
+script:
+- ./node_modules/.bin/cake test
+deploy:
+  provider: releases
+  api_key:
+    secure: NLOENkWpEtC/OVh5WC2ldquqr65p3rxEIukhFackz9HtPt+sznNGcqgoHHh4OwKLAY8XzW3I59QNWYSnMQHJio6ILFp4M653GA5qHC2N7p7eYhZETxjnLvA4e5kuvS+tBeQk8+4vzHhc/Rg8GT5usm/JoTDYJr/tdn2IlfIdQQp8FHHo+CDr+J2wSUcwSj+ZZbSz/hG2bxuWeqv1ro8iLjooRH5IOQxENnteftMiqweZMtxxCB8pxL5wcJphXXMME4ALjhn/CvmyavQneVlteVfbxk0x46KClb4U5vDLRbYpcTNxGl0TqnTR+2/RwiYCdkqClZ6oHMeLRyFvumOId5gRrhhtC+pHDyEUS5dQSN9w+8vxbltXPnEc7DbKgSkb2JXXl/ZJTFXPoAS0nP3UafZI79KjtenKoclXLsdvTehdV2G+z5fQMRsYvjATCcJSDZ0BCJmkvTMvSpG/t8Mlp0A6RghQLdiKw8ufcw848omcBov++6GaBMICK1mh4INJTWMVcXlPaHOuKzts7AJfmUo+8YidHfGO9dep54tULQ9bGG1RGg0yhAl6MDglbcLWWcFjwtu1XE1NRdLjPWCP3a8ABWT7jEP5wSsiRdEzJiMtQ9yRZN0XA2DMjIAlWUzRXbAmfyH6uBmVIyGFQ070ZrXjMXyBLScztQiBpcAvHNU=
+  file: build/WsseDynamicValue.zip
+  on:
+    tags: true
+    repo: xelaris/paw-wsse-dynamic-value
