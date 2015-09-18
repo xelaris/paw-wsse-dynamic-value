@@ -12,6 +12,8 @@ cake build
 cake install
 ```
 
+**Note:** If you don't have `cake` installed already, you can use `npm install -g coffee-script` to install it globally.
+
 ### Watch
 
 During development, watch for changes:
