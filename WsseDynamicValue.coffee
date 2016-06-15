@@ -35,7 +35,7 @@ WsseDynamicValue.title = "WSSE Dynamic Value"
 
 WsseDynamicValue.inputs = [
   DynamicValueInput("username", "Username", "String"),
-  DynamicValueInput("password", "Password", "String")
+  DynamicValueInput("password", "Password", "SecureValue")
 ]
 
 registerDynamicValueClass WsseDynamicValue
